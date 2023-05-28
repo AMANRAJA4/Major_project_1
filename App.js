@@ -1,9 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import React, {useState} from 'react';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 const Stack = createNativeStackNavigator();
+
+import {collection,addDoc} from "firebase/firestore";
+import { db } from './config';
 
 import PRIVACY from './screens/PRIVACY';
 import PHONE from './screens/PHONE';
