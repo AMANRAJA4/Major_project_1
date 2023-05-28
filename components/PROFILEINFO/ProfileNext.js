@@ -15,7 +15,7 @@ const ProfileNext = ({navigation}) => {
           shadowColor:'black'
           }}
 
-          onPress={()=> navigation.navigate('OTP')}
+          onPress={()=> navigation.navigate('Chat')}
       >
       
       <Text style={{fontWeight:'500'}}>Next</Text>

@@ -7,14 +7,22 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 const Stack = createNativeStackNavigator();
 
 import {collection,addDoc} from "firebase/firestore";
-import { db } from './config';
+import { db } from './firebase';
 
+
+/* SignOut Screens */
 import PRIVACY from './screens/PRIVACY';
 import PHONE from './screens/PHONE';
 import VERIFYOTP from './screens/VERIFYOTP';
+import PROFILEINFO from './screens/PROFILEINFO';
+
+/* SignIn Screens */
 
 import CHAT from './screens/CHAT';
-import PROFILEINFO from './screens/PROFILEINFO';
+import STATUS from './screens/STATUS';
+import GROUP from './screens/GROUP';
+import CALL from './screens/CALL';
+
 
 export default function App({navigation}) {
   return (
@@ -27,6 +35,12 @@ export default function App({navigation}) {
           <Stack.Screen name='Phone' component={PHONE} navigation={navigation}/>
           <Stack.Screen name='OTP' component={VERIFYOTP} navigation={navigation}/>
           <Stack.Screen name='ProfileInfo' component={PROFILEINFO} navigation={navigation}/>
+
+          <Stack.Screen name='Group' component={GROUP} navigation={navigation}/>
+          <Stack.Screen name='Chat' component={CHAT} navigation={navigation}/>
+          <Stack.Screen name='Status' component={STATUS} navigation={navigation}/>
+          <Stack.Screen name='Call' component={CALL} navigation={navigation}/>
+          
         </Stack.Navigator>
       </NavigationContainer>
 

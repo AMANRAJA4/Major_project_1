@@ -4,13 +4,13 @@ import ProfileTile from '../components/PROFILEINFO/ProfileTile'
 import ProfileImage from '../components/PROFILEINFO/ProfileImage'
 import ProfileName from '../components/PROFILEINFO/ProfileName'
 import ProfileNext from '../components/PROFILEINFO/ProfileNext'
-const PROFILEINFO = () => {
+const PROFILEINFO = ({navigation}) => {
   return (
     <View style={{backgroundColor:'#03232e', flex:1, alignItems:'center'}}>
       <ProfileTile/>
       <ProfileImage/>
       <ProfileName/>
-      <ProfileNext/>
+      <ProfileNext navigation={navigation}/>
     </View>
   )
 }

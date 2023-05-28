@@ -2,6 +2,7 @@ import { StyleSheet, Text, View , TextInput} from 'react-native'
 import React from 'react'
 
 const PhoneInput = () => {
+
   return (
     <View style={{marginTop:'20%', marginBottom:'10%'}}>
       <TextInput 
@@ -9,7 +10,9 @@ const PhoneInput = () => {
         placeholderTextColor={'white'}
         keyboardType='number-pad'
         maxLength={10}
-        
+
+
+
         style={{
           backgroundColor:'#03232e',
           paddingHorizontal:20,
