@@ -1,6 +1,7 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
+
 const TabBar = ({ navigation }) => {
     return (
         <View style={{ width: '100%', backgroundColor: '#03232e', flexDirection: 'row' }}>
@@ -21,6 +22,7 @@ const TabBar = ({ navigation }) => {
             <View style={{ width: '28%' }}>
                 <TouchableOpacity style={styles.TabBtn} onPress={() => navigation.navigate('Call')}><Text style={styles.text}>Calls</Text></TouchableOpacity>
             </View>
+           
 
         </View>
     )
