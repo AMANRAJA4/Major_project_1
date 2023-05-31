@@ -82,13 +82,13 @@ const ChatList = () => {
             {chats.map((chat, index) => (
                 <View key={index}>
                     <View style={styles.chatContainer}>
-                        <TouchableOpacity style={{ width: 60, marginRight: 15 }}>
+                        <TouchableOpacity style={{ width: 60 }}>
                             <Image style={styles.dpImage}
                                 source={chat.dp}
                             />
                         </TouchableOpacity>
 
-                        <TouchableOpacity style={{ width: '75%' }}>
+                        <TouchableOpacity style={{ width: '80%',paddingLeft:10,height:50}}>
                             <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                                 <Text style={styles.name}>{chat.name}</Text>
                                 <Text style={styles.activity}>{chat.activity}</Text>
@@ -114,8 +114,8 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     dpImage: {
-        width: 60,
-        height: 60,
+        width: 50,
+        height: 50,
         borderRadius: 80
     },
     name: {

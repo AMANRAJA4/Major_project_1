@@ -1,10 +1,11 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
 const MessageIcon = () => {
     return (
         <TouchableOpacity style={styles.con}>
-            <Image source={require('../../assets/comment.png')} style={{width:20,height:20}}/>
+            <Icon name="message-text" color={'white'} size={20} />
         </TouchableOpacity>
     )
 }
@@ -13,13 +14,14 @@ export default MessageIcon
 
 const styles = StyleSheet.create({
     con: {
-        borderRadius: 30,
+        borderRadius: 25,
         backgroundColor: '#03232e',
-        padding: 20,
         width:50,
         height:50,
         alignItems:'center',
         elevation:20,
-        shadowColor:'black'
+        shadowColor:'black',
+        flexDirection:'row',
+        justifyContent:'center'
     }
 })
