@@ -22,6 +22,6 @@ const styles = StyleSheet.create({
         elevation:20,
         shadowColor:'black',
         flexDirection:'row',
-        justifyContent:'center'
+        justifyContent:'center',
     }
 })

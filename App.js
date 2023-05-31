@@ -23,6 +23,10 @@ import STATUS from './screens/STATUS';
 import GROUP from './screens/GROUP';
 import CALL from './screens/CALL';
 
+import CHATTING from '././screens/chatscreens/CHATTING'
+import CHATTINGINFO from '././screens/chatscreens/CHATTINGINFO'
+
+import SETTING from '././screens/settingscreens/SETTING'
 
 export default function App({navigation}) {
   return (
@@ -40,7 +44,10 @@ export default function App({navigation}) {
           <Stack.Screen name='Chat' component={CHAT} navigation={navigation}/>
           <Stack.Screen name='Status' component={STATUS} navigation={navigation}/>
           <Stack.Screen name='Call' component={CALL} navigation={navigation}/>
-          
+
+          <Stack.Screen name='Chatting' component={CHATTING} navigation={navigation}/>
+          <Stack.Screen name='ChattingInfo' component={CHATTINGINFO} navigation={navigation}/>
+          <Stack.Screen name='Setting' component={SETTING} navigation={navigation}/>
         </Stack.Navigator>
       </NavigationContainer>
 

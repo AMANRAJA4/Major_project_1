@@ -22,7 +22,7 @@ const ProfileTile = ({navigation}) => {
                 </View>
 
                 <View style={{ width: '10%' }}>
-                    <TouchableOpacity style={{ width: 20 }} onPress={() => navigation.navigate('Chat')}>
+                    <TouchableOpacity style={{ width: 20 }} >
                         <Image source={require('../../assets/menu.png')} style={{ width: 20, height: 20 }} />
                     </TouchableOpacity>
                 </View>

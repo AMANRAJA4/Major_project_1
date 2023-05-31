@@ -76,19 +76,19 @@ const chats = [
         lastchat: 'Good night ',
     },
 ]
-const ChatList = () => {
+const ChatList = ({navigation}) => {
     return (
         <>
             {chats.map((chat, index) => (
                 <View key={index}>
                     <View style={styles.chatContainer}>
-                        <TouchableOpacity style={{ width: 60 }}>
+                        <TouchableOpacity style={{ width: 60 }} onPress={()=>{navigation.navigate('')}}>
                             <Image style={styles.dpImage}
                                 source={chat.dp}
                             />
                         </TouchableOpacity>
 
-                        <TouchableOpacity style={{ width: '80%',paddingLeft:10,height:50}}>
+                        <TouchableOpacity style={{ width: '80%',paddingLeft:10,height:50}} onPress={()=>{navigation.navigate('Chatting')}}>
                             <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                                 <Text style={styles.name}>{chat.name}</Text>
                                 <Text style={styles.activity}>{chat.activity}</Text>

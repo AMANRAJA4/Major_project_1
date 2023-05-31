@@ -11,7 +11,7 @@ const CHAT = ({ navigation }) => {
     <View>
 
       <ScrollView showsVerticalScrollIndicator={false} stickyHeaderIndices={[1]} >
-        <Header />
+        <Header navigation={navigation}/>
         <TabBar navigation={navigation} />
         <Divider width={1} orientation="vertical" />
 
@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
   icon: {
     position: 'absolute',
     right: 20,
-    bottom: -220,
-    marginTop: '80%',
+    bottom: 20,
   }
 })

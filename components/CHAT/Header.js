@@ -9,7 +9,7 @@ import {
   MenuTrigger,
 } from 'react-native-popup-menu';
 
-const Header = () => {
+const Header = ({navigation},props) => {
   return (
     <View style={{ backgroundColor: '#03232e', flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 10, paddingVertical: 15 }}>
       <View>
@@ -19,12 +19,17 @@ const Header = () => {
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
 
         <TouchableOpacity style={{ marginHorizontal: 5, padding: 3 }}>
-          <Icon name="camera" color={'white'} size={20} />
+          <Icon name="camera-outline" color={'white'} size={20} />
         </TouchableOpacity>
 
         <TouchableOpacity style={{ marginHorizontal: 5, padding: 3 }}>
           <Icon name="magnify" color={'white'} size={20} />
         </TouchableOpacity>
+
+        <TouchableOpacity style={{ marginHorizontal: 5, padding: 3 }} onPress={()=>navigation.navigate('Setting')}>
+          <Icon name="dots-vertical" color={'white'} size={20} />
+        </TouchableOpacity>
+
 
       </View>
 
