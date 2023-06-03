@@ -10,7 +10,7 @@ const SETTING = ({ navigation }) => {
     <>
       <SettingHeader navigation={navigation} />
       <ScrollView showsVerticalScrollIndicator={true} scroll>
-      <ProfileList />
+      <ProfileList navigation={navigation}/>
         <SettingList/>
       </ScrollView>
     </>

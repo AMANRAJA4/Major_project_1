@@ -27,6 +27,7 @@ import CHATTING from '././screens/chatscreens/CHATTING'
 import CHATTINGINFO from '././screens/chatscreens/CHATTINGINFO'
 
 import SETTING from '././screens/settingscreens/SETTING'
+import PROFILE from './screens/settingscreens/PROFILE';
 
 export default function App({navigation}) {
   return (
@@ -48,6 +49,7 @@ export default function App({navigation}) {
           <Stack.Screen name='Chatting' component={CHATTING} navigation={navigation}/>
           <Stack.Screen name='ChattingInfo' component={CHATTINGINFO} navigation={navigation}/>
           <Stack.Screen name='Setting' component={SETTING} navigation={navigation}/>
+          <Stack.Screen name='Profile' component={PROFILE} navigation={navigation}/>
         </Stack.Navigator>
       </NavigationContainer>
 
