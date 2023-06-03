@@ -82,7 +82,7 @@ const ChatList = ({navigation}) => {
             {chats.map((chat, index) => (
                 <View key={index}>
                     <View style={styles.chatContainer}>
-                        <TouchableOpacity style={{ width: 60 }} onPress={()=>{navigation.navigate('')}}>
+                        <TouchableOpacity style={{ width: 60 }}>
                             <Image style={styles.dpImage}
                                 source={chat.dp}
                             />

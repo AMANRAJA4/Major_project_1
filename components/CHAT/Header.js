@@ -18,16 +18,16 @@ const Header = ({navigation},props) => {
 
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
 
-        <TouchableOpacity style={{ marginHorizontal: 5, padding: 3 }}>
-          <Icon name="camera-outline" color={'white'} size={20} />
+        <TouchableOpacity style={{ marginHorizontal: 5, padding: 3,borderRadius:25 }}>
+          <Icon name="camera-outline" color={'white'} size={25} />
         </TouchableOpacity>
 
-        <TouchableOpacity style={{ marginHorizontal: 5, padding: 3 }}>
-          <Icon name="magnify" color={'white'} size={20} />
+        <TouchableOpacity style={{ marginHorizontal: 5, padding: 3,borderRadius:25  }}>
+          <Icon name="magnify" color={'white'} size={25} />
         </TouchableOpacity>
 
-        <TouchableOpacity style={{ marginHorizontal: 5, padding: 3 }} onPress={()=>navigation.navigate('Setting')}>
-          <Icon name="dots-vertical" color={'white'} size={20} />
+        <TouchableOpacity style={{ marginHorizontal: 5, padding: 3 ,borderRadius:25 }} onPress={()=>navigation.navigate('Setting')}>
+          <Icon name="dots-vertical" color={'white'} size={25} />
         </TouchableOpacity>
 
 
